@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcolo Biglietto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <input type="text" id="name" placeholder="Inserisci il tuo nome">
+    <input type="number" id="km" placeholder="Inserisci i km" >
+    <select id="fasciaEta">
+        <option value="1">Minorenne (&lt;18)</option>
+        <option value="2">Maggiorenne (18-65)</option>
+        <option value="3">Senior (65+)</option>
+    </select>
+    <button id="calcola">Calcola</button>
+    <button id="reset">Annulla</button>
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Passeggero</th>
+                    <th>Offerta</th>
+                    <th>Costo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="bigliettoPasseggero"></td>
+                    <td id="bigliettoOfferta"></td>
+                    <td id="bigliettoCosto"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
